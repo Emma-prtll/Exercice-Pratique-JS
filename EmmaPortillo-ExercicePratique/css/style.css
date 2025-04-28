@@ -1,0 +1,253 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+  text-shadow: 5px 5px #919191;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 2em 0 2em 0;
+  background-color: white;
+  text-align: center;
+}
+
+header a {
+  font-size:1.5em;
+  display: inline-block;
+  padding: 1em;
+  margin: 0 3em;
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration:underline;
+}
+
+article {
+  width: 100%;
+  background-color: #cacaca;
+}
+
+#about {
+  padding: 4em 0 4em 0;
+  margin: 0px;
+  width: 100%;
+  /* background: url("http://via.placeholder.com/360?text=Placeholder+Parallax") repeat left top fixed; */
+  box-shadow: inset 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+
+#aboutDiv{
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+  background-color: white;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+
+#aboutText {
+  overflow: hidden;
+  height: 60px;
+}
+
+#about button{
+  font-size:30px;
+  background:none;
+  border:none;
+}
+#about button:hover{
+  /* suppression du changement de taille */
+  /* font-size:35px; */
+  cursor:pointer;
+}
+
+#folio {
+  padding: 4em 0 4em 0;
+  margin: 0px;
+  width: 100%;
+  background-color: white;
+}
+
+#folio-container {
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.folio-element {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  margin: 20px;
+}
+
+.folio-element img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  /* Taille les éléments à la taille de leur container */
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  font-size: 4.5em;
+  display: none;
+  z-index: 2;
+}
+
+.folio-element:hover .overlay {
+  display: block;
+  cursor: pointer;
+}
+
+#contact {
+  padding: 4em 0 4em 0;
+  margin: 0px;
+  width: 100%;
+  /* background: url("http://placehold.it/360?text=Placeholder+Parallax") repeat left top; */
+  box-shadow: inset 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 20px;
+  max-width: 900px;
+  background-color: white;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+  text-align: center
+}
+
+label {
+  display: inline-block;
+  margin: 10px;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  width: 50%;
+  border: 2px solid black;
+}
+
+form button{
+  margin-top:20px;
+  height:50px;
+  width:100px;
+  background-color:#cacaca;
+  border:none;
+}
+
+form button:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+#hidden{
+  display: none;
+}
+
+form button:focus{
+  background-color:#cacaca;
+  box-shadow: inset 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  width: 100%;
+  padding: 2em 0 2em 0;
+  background-color: black;
+  color: white
+}
+
+footer div {
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div p {
+  display: inline-block;
+}
+
+#lightbox {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, .7);
+  text-align: center;
+  display: none;
+  z-index:2;
+}
+
+#lightbox p {
+  text-align: right;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+#lightbox img {
+  box-shadow: 0 0 25px #111;
+  margin-top: 10%;
+  width: 800px;
+  height: 400px;
+}
+
+/* ajout de des class to-top et du a pour les stylisés */
+#to-top{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cacaca;
+
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#to-top a{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
